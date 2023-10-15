@@ -3,6 +3,7 @@
   <head>
     <title>CSS</title>
     <link rel="stylesheet" href="mystyle.css" />
+    <script src="master.js"></script>
   </head>
   <body>
     <h1><a href="index.html">WEB</a></h1>
@@ -22,6 +23,9 @@
           alt="css image"
           width="10%"
         />
+        <br>
+        <input id="night_day" type="button" value="night" onclick="nightdayhandler(this)"/>
+
         <p>
           Cascading Style Sheets (CSS) is a style sheet language used for
           describing the presentation of a document written in a markup language
@@ -39,35 +43,8 @@
           content; and enable the .css file to be cached to improve the page
           load speed between the pages that share the file and its formatting.
         </p>
+        <input id="night_day" type="button" value="night" onclick="nightdayhandler(this)"/>
       </div>
     </div>
-
-    <input id="night_day" type="button" value="night" onclick="
-  var target = document.querySelector('body');
-
-  if(this.value == 'night'){
-    target.style.backgroundColor = 'black';
-    target.style.color = 'yellow';
-    this.value = 'day';
-
-    var alist = document.querySelectorAll('a');
-    var i = 0;
-    while (i < alist.length) {
-      alist[i].style.color = red;
-      i = i + 1;
-    }    
-  } else {
-    target.style.backgroundColor = 'pink';
-    target.style.color = 'green';
-    this.value = 'night';
-
-    var alist = document.querySelectorAll('a');
-    var i = 0;
-    while (i < alist.length) {
-      alist[i].style.color = 'blue';
-      i = i + 1;
-    }  
-  }  
-  ">  
   </body>
 </html>

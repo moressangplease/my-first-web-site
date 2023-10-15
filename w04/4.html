@@ -3,7 +3,9 @@
   <head>
     <title>React</title>
     <link rel="stylesheet" href="mystyle.css" />
+    <script src="master.js"></script>
   </head>
+  
   <body>
     <h1><a href="index.html">WEB</a></h1>
     <div id="grid">
@@ -22,6 +24,8 @@
           alt="react image"
           width="10%"
         />
+        <br>
+        <input id="night_day" type="button" value="night" onclick="nightdayhandler(this)"/>
         <p>
           React (also known as React.js or ReactJS) is a free and open-source
           front-end JavaScript library[3][4] for building user interfaces based
@@ -35,34 +39,9 @@
           React applications often rely on libraries for routing and other
           client-side functionality.[8][9]
         </p>
+        <input id="night_day" type="button" value="night" onclick="nightdayhandler(this)"/>
       </div>
     </div>
-    <input id="night_day" type="button" value="night" onclick="
-  var target = document.querySelector('body');
-
-  if(this.value == 'night'){
-    target.style.backgroundColor = 'blue';
-    target.style.color = 'white';
-    this.value = 'day';
-
-    var alist = document.querySelectorAll('a');
-    var i = 0;
-    while (i < alist.length) {
-      alist[i].style.color = 'powderblue';
-      i = i + 1;
-    }    
-  } else {
-    target.style.backgroundColor = 'white';
-    target.style.color = 'orange';
-    this.value = 'night';
-
-    var alist = document.querySelectorAll('a');
-    var i = 0;
-    while (i < alist.length) {
-      alist[i].style.color = 'blue';
-      i = i + 1;
-    }  
-  }  
-  ">  
+    
   </body>
 </html>

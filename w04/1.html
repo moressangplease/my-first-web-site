@@ -3,7 +3,9 @@
   <head>
     <title>Html</title>
     <link rel="stylesheet" href="mystyle.css" />
+    <script src="master.js"></script>
   </head>
+
   <body>
     <h1><a href="index.html">WEB</a></h1>
     <div id="grid">
@@ -22,6 +24,9 @@
           alt="html image"
           width="10%"
         />
+        <br>
+        <input id="night_day" type="button" value="night" onclick="nightdayhandler(this)"/>
+
         <p>
           The HyperText Markup Language or HTML is the standard markup language
           for documents designed to be displayed in a web browser. It defines
@@ -35,35 +40,9 @@
           describes the structure of a web page semantically and originally
           included cues for its appearance.
         </p>
+        <input id="night_day" type="button" value="night" onclick="nightdayhandler(this)"/>
       </div>
     </div>
-    <input id="night_day" type="button" value="night" onclick="
-  var target = document.querySelector('body');
-
-  if(this.value == 'night'){
-    target.style.backgroundColor = 'black';
-    target.style.color = 'white';
-    this.value = 'day';
-
-    var alist = document.querySelectorAll('a');
-    var i = 0;
-    while (i < alist.length) {
-      alist[i].style.color = 'powderblue';
-      i = i + 1;
-    }    
-  } else {
-    target.style.backgroundColor = 'white';
-    target.style.color = 'black';
-    this.value = 'night';
-
-    var alist = document.querySelectorAll('a');
-    var i = 0;
-    while (i < alist.length) {
-      alist[i].style.color = 'blue';
-      i = i + 1;
-    }  
-  }  
-  ">  
-
+   
   </body>
 </html>
